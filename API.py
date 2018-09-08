@@ -1,8 +1,7 @@
 """ Created by Soroush Famili(Github SoroushF79) from 5/27/18 to 6/4/18. This script scrapes sonnetaday.org every other day 
 for the sonnet that is posted. From then, approximately every 10th non-stopword is replaced by the name of a random 
-dead Shakespearean character. The revised "sonnet" is then posted on Twitter. I did this with while 
-improving over time for a week on my Twitter account @FamilyWithAnI.
-
+dead Shakespearean character. The revised "sonnet" is then posted on Twitter. I did this with tweaking for a week on my 
+Twitter account @FamilyWithAnI.
 """
 
 import tweepy
