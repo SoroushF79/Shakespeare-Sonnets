@@ -11,8 +11,8 @@ import numpy.random as np
 import time
 
 
-auth = tweepy.OAuthHandler("Iu2bL60n8TBJN4XU40Q95qT3G", "x4plYdRldb2zdhqzVu2kqWYSmh4P35Y9uw1JIXL8eSbAaUt139")
-auth.set_access_token("2556368518-ah0T6Qi5zMYu7HQcVDbynv3mz6smYeIwlXP5Tij","qGGWJMXubP3WEEmAJUJP5UztTpBDmS4u3OXlDBMBBtm8S")
+auth = tweepy.OAuthHandler("", "")
+auth.set_access_token("","")
 api = tweepy.API(auth)
 
 #This part is to get the stopwords that we want to ignore into a list we can reference later
