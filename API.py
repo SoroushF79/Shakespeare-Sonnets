@@ -60,7 +60,8 @@ def TheFunc():
     count = 0
     
     # Counts the number of words/characters in the sonnet. Since Twitter has a max character length of 280 characters and
-    # I don't want the sonnet to be cut mid-word, I must count the number of words and characters, here starting with the number of characters.
+    # I don't want the sonnet to be cut mid-word, I must count the number of words and characters, here starting with the number
+    # of characters.
     for i in actual_sonnet[0]:
         count += 1
         if(i == "."):
@@ -81,9 +82,10 @@ def TheFunc():
     filtered[0] = string1 + " " + string2
     
     """
-     To change the ~10th word to be the name of a random dead character. I didn't want to replace a stopword such as "it," "a," "when," etc. 
-     or punctuation. I only wanted to change actual words so if the 10th word was a listed stopword it wouldn't be replaced. Rather, I'd move onto the next word,
-     check that, etc. I also had to make sure that I was still within the Twitter 280 character limit.
+     To change the ~10th word to be the name of a random dead character. I didn't want to replace a stopword such as "it," "a," 
+     "when," etc. or punctuation. I only wanted to change actual words so if the 10th word was a listed stopword it wouldn't 
+     be replaced. Rather, I'd move onto the next word, check that, etc. I also had to make sure that I was 
+     still within the Twitter 280 character limit.
      """
     for i in filtered:
         if (((filtered.index(i) % 13) == 0) and (i not in words) and (filtered.index(i) != 0)):
@@ -110,9 +112,9 @@ def TheFunc():
 
     """
     sonnetaday.org posts a new sonnet every other day so I don't want to upload a new sonnet everyday. Thus, I flip n between 1 and 2 
-    and on the days when I don't want to tweet n becomes a 1 so I can tweet the next day, and the days that I do tweet I make n a 1 so it
-    doesn't tweet the following day. I chose to tweet everyday at 12:00 pm Chicago time. However, I kept my code running on an 
-    Amazon Web Services server which uses Universal time so it would 17:00 in Universal Time is 12:00 pm Chicago time.
+    and on the days when I don't want to tweet n becomes a 1 so I can tweet the next day, and the days that I do tweet I make 
+    n a 1 so it doesn't tweet the following day. I chose to tweet everyday at 12:00 pm Chicago time. However, I kept my code 
+    running on an Amazon Web Services server which uses Universal time so 17:00 in Universal Time is 12:00 pm Chicago time.
     """
 n = 2
 while(True):
